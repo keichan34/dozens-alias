@@ -1,5 +1,6 @@
 require "dozens/alias/version"
 require "dozens/api"
+require "resolv"
 
 module Dozens
   class Alias
