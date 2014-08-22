@@ -11,7 +11,7 @@ module Dozens
       @target = target
 
       @general_resolv = Resolv::DNS.new
-      @target_resolv = Resolv::DNS.new nameserver: authoritative_nameservers
+      # @target_resolv = Resolv::DNS.new nameserver: authoritative_nameservers
     end
 
     def update!
@@ -46,7 +46,7 @@ module Dozens
     end
 
     def target_ips
-      @target_resolv.getaddresses(@target).map { |e| e.to_s }
+      @general_resolv.getaddresses(@target).map { |e| e.to_s }
     end
 
   end
