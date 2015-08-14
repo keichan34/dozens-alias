@@ -1,6 +1,9 @@
 # Dozens::Alias
 
-TODO: Write a gem description
+Dozens::Alias was an ALIAS record emulator for Dozens (a Japanese DNS hosting
+company) that updated A records at the domain apex periodically. Now that Dozens
+has [native support for ALIAS records](http://blog.dozens.jp/post/121313849283/aliasレコード機能を追加しました),
+this library is deprecated.
 
 ## Installation
 
@@ -15,10 +18,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install dozens-alias
-
-## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 
